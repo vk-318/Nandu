@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff5f5">
+  <meta name="description" content="A little letter from the heart, made with love and sincerity.">
+  <title>A Little Something for You ❤️</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="loader" id="loader" aria-label="Loading">
+    <div class="loader-heart">♥</div><p>Preparing a little something...</p>
+  </div>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb-one"></div><div class="orb orb-two"></div>
+    <div class="sparkle sparkle-one">✦</div><div class="sparkle sparkle-two">✧</div>
+    <div class="sparkle sparkle-three">✦</div>
+  </div>
+  <div class="particle-layer" id="particles" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" data-go="0" aria-label="Go to home"><span class="brand-heart">♥</span> a little note</a>
+    <div class="header-actions">
+      <span class="progress-label" id="progressLabel">01 / 09</span>
+      <button class="icon-button music-toggle" id="musicToggle" type="button" aria-label="Play background music" title="Music on/off">♫<span class="music-dot"></span></button>
+    </div>
+  </header>
+
+  <main id="experience">
+    <section class="page active" data-page="0" id="home" aria-labelledby="welcomeTitle">
+      <div class="hero-content">
+        <span class="eyebrow"><span class="eyebrow-line"></span> made with all my heart <span class="eyebrow-line"></span></span>
+        <div class="hero-heart-wrap" aria-hidden="true"><div class="hero-heart">♥</div><span class="heart-ring ring-a"></span><span class="heart-ring ring-b"></span></div>
+        <h1 id="welcomeTitle">Oye, Meri Pyaari <span data-name></span> <span class="pink">♥</span></h1>
+        <p class="hero-subtitle">Gussa thoda side mein rakh ke ye dekh lo na... 🥺</p>
+        <button class="primary-button" data-next type="button">Open Your Surprise <span>💌</span></button>
+        <p class="tiny-note">sirf tumhare liye, madam ji</p>
+      </div>
+      <span class="side-note">01 — A NOTE FROM MY HEART</span>
+    </section>
+
+    <section class="page" data-page="1" aria-labelledby="introTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">01 / a moment, please</span>
+        <h2 id="introTitle">Ek Chhoti Si<br><em>Baat Suno...</em></h2>
+        <div class="letter-card reveal">
+          <div class="letter-seal">♥</div>
+          <p class="letter-kicker">a little message for <span data-name></span></p>
+          <p class="typewriter" data-typewriter="Pehle toh sorry… aur haan, itna gussa rehna sehat ke liye achha nahi hai madam 😅"></p>
+          <p>Mujhe pata hai tum mujhse naraz ho, aur tumhara naraz hona banta bhi hai. Bas 2 minute meri baat sun lo na. ❤️</p>
+          <span class="letter-flourish">with care, always</span>
+        </div>
+        <button class="primary-button" data-next type="button">Read My Heart <span>❤️</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="2" aria-labelledby="sorryTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">02 / from the bottom of my heart</span>
+        <div class="soft-heart" aria-hidden="true">♥</div>
+        <h2 id="sorryTitle">Sorry Yaar, <span data-name></span><span class="pink">.</span></h2>
+        <div class="apology-copy reveal">
+          <p>Maine faltu mein gussa kiya aur tumhe daant diya. Mujhe aise baat nahi karni chahiye thi.</p>
+          <p><strong>Tumhari koi galti nahi thi ki main tum par gussa nikalun.</strong></p>
+          <p>Koi excuse nahi banaunga. Galti meri thi, maan li. Ab daantne ke bajaye tumhe hasane ki practice karunga. 😅</p>
+          <p>Sach mein sorry, meri pyaari si gusse wali ladki. ❤️</p>
+          <p>Tum mere liye bahut special ho. Tumhari feelings aur smile dono ka khayal rakhna chahta hoon.</p>
+        </div>
+        <p class="signature-line">Dil se sorry, pakka. ❤️ <span>♥</span></p>
+        <button class="primary-button" data-next type="button">There's More I Want You to Know <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="3" aria-labelledby="knowTitle">
+      <div class="section-shell">
+        <span class="eyebrow">03 / please remember</span>
+        <h2 id="knowTitle">Bas Itna Yaad<br><em>Rakhna</em> <span class="pink">🌷</span></h2>
+        <p class="section-intro">Gusse mein bhi tum meri favourite ho. 😌</p>
+        <div class="value-grid">
+          <article class="value-card reveal"><span class="card-number">01</span><span class="card-icon">♡</span><h3>Tumhari Feelings Important Hain</h3><p>Tumhari baat sunni chahiye, uspe gussa nahi karna chahiye.</p></article>
+          <article class="value-card reveal"><span class="card-number">02</span><span class="card-icon">✿</span><h3>Thoda Patience Banta Hai</h3><p>Har baat pe gussa nahi, kabhi pyaar se bhi samjha ja sakta hai.</p></article>
+          <article class="value-card reveal"><span class="card-number">03</span><span class="card-icon">☼</span><h3>Main Sudharne Ki Koshish Karunga</h3><p>Next time pehle sochunga, phir bolunga. Pakka try karunga.</p></article>
+          <article class="value-card reveal"><span class="card-number">04</span><span class="card-icon">♥</span><h3>Tum Bahut Special Ho</h3><p>Ek stupid si ladai se tumhari importance kam nahi hoti. Bilkul bhi nahi.</p></article>
+        </div>
+        <button class="primary-button" data-next type="button">A Few Little Things... <span>✨</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="4" aria-labelledby="littleTitle">
+      <div class="section-shell">
+        <span class="eyebrow">04 / little things, big feelings</span>
+        <h2 id="littleTitle">Tumhari Kuch<br><em>Favourite Baatein</em> <span class="pink">✦</span></h2>
+        <p class="section-intro">Waise tumhe batane ki zarurat nahi, par phir bhi…</p>
+        <div class="compliment-grid">
+          <div class="compliment reveal"><span>01</span><p>Tumhari smile dekh ke mera mood set ho jaata hai.</p><b>✧</b></div>
+          <div class="compliment reveal"><span>02</span><p>Tum khush raho, bas ye important hai.</p><b>♡</b></div>
+          <div class="compliment reveal"><span>03</span><p>Tum saath ho toh normal din bhi special lagta hai.</p><b>✿</b></div>
+          <div class="compliment reveal"><span>04</span><p>Tumhe extra pyaar aur respect milna chahiye. Mere se bhi. ❤️</p><b>♡</b></div>
+          <div class="compliment reveal"><span>05</span><p>Madam, tum bahut important ho.</p><b>✦</b></div>
+          <div class="compliment reveal"><span>06</span><p>Tumhari narazgi bhi sun lunga, bas baat kar lena.</p><b>❀</b></div>
+        </div>
+        <button class="primary-button" data-next type="button">A Promise From Me <span>🤝</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="5" aria-labelledby="promiseTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">05 / a promise, not just words</span>
+        <div class="promise-heart" aria-hidden="true">♥</div>
+        <h2 id="promiseTitle">Ek Chhota Sa<br><em>Promise</em></h2>
+        <div class="promise-card reveal">
+          <p class="promise-lead">Perfect toh nahi hoon, par tumhare liye better zaroor banna chahta hoon.</p>
+          <ul class="promise-list">
+            <li><span>✓</span> Pehle tumhari baat sununga.</li>
+            <li><span>✓</span> Gusse se nahi, pyaar se baat karunga.</li>
+            <li><span>✓</span> Tumhari feelings samjhunga.</li>
+            <li><span>✓</span> Apna gussa control karunga.</li>
+            <li><span>✓</span> Tumhe kabhi taken for granted nahi loonga.</li>
+          </ul>
+          <p class="promise-foot">Ab promises se zyada actions dikhane hain. ❤️</p>
+        </div>
+        <button class="primary-button" data-next type="button">There's a Little Surprise <span>🎁</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="6" aria-labelledby="giftTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">06 / something tucked away for you</span>
+        <h2 id="giftTitle">Chhota Sa<br><em>Surprise</em> <span class="pink">🎁</span></h2>
+        <p class="section-intro">Gift kholo na… andar ek sorry aur dher saara pyaar hai. 🎁</p>
+        <button class="gift-button" id="giftButton" type="button" aria-label="Open your surprise gift" aria-expanded="false">
+          <span class="gift-glow"></span><span class="gift-box"><span class="gift-lid"></span><span class="gift-bow">✿</span><span class="gift-ribbon"></span><span class="gift-front-heart">♥</span></span>
+          <span class="gift-tap">tap to open</span>
+        </button>
+        <div class="surprise-message" id="surpriseMessage" hidden>
+          <span class="surprise-spark">✦ ✧ ♥ ✧ ✦</span>
+          <p>Us waqt gussa karne ke bajaye tumhe hug kar leta toh better hota. 🥺</p>
+          <p>Kal change nahi kar sakta, par next time tumhe hurt na karne ki poori koshish karunga.</p>
+          <span class="letter-flourish">aur haan, ek smile bhi de dena please 😄</span>
+        </div>
+        <button class="primary-button" data-next type="button">One Last Question <span>💌</span></button>
+      </div>
+    </section>
+
+    <section class="page" data-page="7" aria-labelledby="questionTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">07 / only if and when you're ready</span>
+        <div class="question-heart" aria-hidden="true">♡</div>
+        <h2 id="questionTitle">Ab Maan Bhi Jao Na,<br><em><span data-name></span></em> ❤️</h2>
+        <div class="final-copy reveal">
+          <p>Pata hai sirf sorry bolne se sab theek nahi hota.</p>
+          <p>Par itna gussa bhi mat raho na… tumhari smile miss ho rahi hai. 🥺</p>
+          <p>Main sach mein sorry hoon. Tumhe pyaar, respect aur thodi extra pampering dena chahta hoon.</p>
+        </div>
+        <div class="answer-buttons" id="answerButtons">
+          <button class="primary-button forgive-button" id="forgiveButton" type="button">Okay, I forgive you <span>❤️</span></button>
+          <button class="secondary-button" id="timeButton" type="button">I Need Some Time <span>🌷</span></button>
+        </div>
+        <div class="response-panel" id="responsePanel" role="status" aria-live="polite" hidden></div>
+      </div>
+    </section>
+
+    <section class="page" data-page="8" aria-labelledby="letterTitle">
+      <div class="section-shell narrow">
+        <span class="eyebrow">08 / saved for the end</span>
+        <h2 id="letterTitle">Achha Suno, <em>Ek Last Baat...</em> <span class="pink">💕</span></h2>
+        <article class="handwritten-letter reveal">
+          <div class="letter-topline"><span>♡</span><span>just for you</span><span>♡</span></div>
+          <p>Dear <span data-name></span>,</p>
+          <p>Kabhi kabhi main stupid behave kar deta hoon, par tum mere liye bahut special ho. Sorry yaar.</p>
+          <p>Mujhe tumhari baat sunni chahiye thi, daantna nahi chahiye tha.</p>
+          <p>Pyaar mein thoda patience, respect aur care zaroori hai. Main ye sab better karna chahta hoon.</p>
+          <p>Aur haan, tumhe hasana bhi meri duty hai. 😌</p>
+          <p>Meri life mein hone ke liye thank you, meri favourite person. ❤️</p>
+          <p class="letter-signoff">With all my love,<br><span class="hand-signature" id="senderSignature" data-sender></span> <span class="pink">❤️</span></p>
+        </article>
+        <p class="closing-note">No pressure… bas ek pyaari si smile mil jaaye toh dil khush ho jayega. ❤️</p>
+        <button class="primary-button" id="replayButton" type="button">Read It Again <span>↺</span></button>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Page navigation">
+    <button type="button" data-go="0" class="nav-item active"><span>⌂</span><small>Home</small></button>
+    <button type="button" data-go="2" class="nav-item"><span>♡</span><small>Apology</small></button>
+    <button type="button" data-go="5" class="nav-item"><span>✧</span><small>Promises</small></button>
+    <button type="button" data-go="6" class="nav-item"><span>🎁</span><small>Surprise</small></button>
+    <button type="button" data-go="8" class="nav-item"><span>✉</span><small>Letter</small></button>
+  </nav>
+
+  <div class="page-controls">
+    <button class="text-button" id="prevButton" type="button" disabled>← Previous</button>
+    <div class="progress-track" aria-label="Reading progress"><span id="progressBar"></span></div>
+    <button class="text-button" id="nextButton" type="button">Next →</button>
+  </div>
+
+  <button class="floating-heart" id="heartButton" type="button" aria-label="Send a little heart">♥</button>
+  <audio id="backgroundMusic" loop preload="none">
+    <source src="music/your-romantic-track.mp3" type="audio/mpeg">
+  </audio>
+  <footer class="site-footer">made gently, with love <span>♥</span></footer>
+</body>
+</html>
